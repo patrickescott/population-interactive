@@ -1,0 +1,60 @@
+#container, #widget, #response {
+	width: 100%;
+	max-width: 500px; 
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: red;
+    }
+}
+
+#container {
+	border-radius: 12px;
+	background-color: rgba(173,216,230,0.6);
+	border-style: solid;
+    border-width: 1px;
+}
+
+#widget {
+	height: 190px;
+	padding-top: 10px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+#response {
+	height: 90px;
+	display: none;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+}
+
+#header {
+	height: 100px;
+}
+
+h1, p, button {
+	margin-left: 30px;
+	margin-right: 20px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+#search {
+	margin-left: 30px;
+	padding-top: 30px;
+}
+p, li, button, input { 
+	font-size: 1em;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#response-text {
+	overflow: inherit;
+	margin-top: 0px;
+}
+
+#source {
+	text-align: right;
+	font-size: 1em;
+}
+
