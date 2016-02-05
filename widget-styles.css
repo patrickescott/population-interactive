@@ -20,7 +20,7 @@
 }
 
 #widget {
-	height: 220px;
+	height: 210px;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 }
@@ -58,4 +58,8 @@ p, li, button, input {
 #source {
 	text-align: right;
 	font-size: 1em;
+}
+
+button {
+	margin-top: 15px
 }
