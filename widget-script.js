@@ -9,7 +9,7 @@ $(document).ready(function(){
 		// Declare empty array for autocomlete options
 		var completers = [];
 		$.each(data, function(i, area){
-			completers.push(area["name"]);
+			completers.push(i);
 		});
 		
 		// Set-up auto-complete
@@ -24,11 +24,11 @@ $(document).ready(function(){
 		// Define click event to draw in data
 		$('#widget').on('click', 'button', function(event){
 			event.preventDefault();
-			var place = $('#auto').val().toLowerCase();
+			var place = $('#auto').val();
 			try {
 				$('#response-text')
-					.html("In " + data[place]["name"] + " there are " + numberWithCommas(data[place].men) + " men and " +
-						numberWithCommas(data[place].women) + " women, giving a total population of " + numberWithCommas(data[place].population) + ".");
+					.html("In " + place + " there are " + numberWithCommas(data[place].men) + " men and " +
+						numberWithCommas(data[place].women) + " women, giving a total population of " + numberWithCommas(data[place].men + data[place].women) + ".");
 			} catch (error) {
 				$('#response-text')
 					.html("Enter a valid local authority from the menu.");
