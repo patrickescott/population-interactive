@@ -41,7 +41,6 @@ $(document).ready(function(){
 				$('#response-text')
 					.html("Enter a valid local authority from the menu.");
 				$( "#response" ).hide().show('slow');
-				$( "#chart-container" ).hide().show('slow');
 			}
 		});
 	});
@@ -104,8 +103,13 @@ function drawChart(place_data, place_name) {
 
 	// Define function to get screen size and calculate scales.
 	function get_dimensions() {
-					
-		width = $('#container').width() - margin;
+		
+		if (parseInt($('#chart-container').width(), 10) > window.innerWidth){
+			width = parseInt(window.innerWidth, 10) - margin;
+		} else {
+			width = parseInt($('#chart-container').width(), 10) - margin;
+		}	
+		
 		height =  90;
 
 		svg.attr("width", width + margin)
