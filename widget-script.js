@@ -104,11 +104,8 @@ function drawChart(place_data, place_name) {
 	// Define function to get screen size and calculate scales.
 	function get_dimensions() {
 		
-		if (parseInt($('#chart-container').width(), 10) > window.innerWidth){
-			width = parseInt(window.innerWidth, 10) - margin;
-		} else {
-			width = parseInt($('#chart-container').width(), 10) - margin;
-		}	
+
+		width = parseInt($('#chart-container').width(), 10) - margin;
 		
 		height =  90;
 
