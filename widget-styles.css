@@ -3,18 +3,12 @@
 	max-width: 480px; 
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
     #source, p, li, button, input {
     	font-size: 0.9em;
     }
     h1 {
     	font-size: 20pt;
-    }
-    #widget {
-    	height: 270px;
-    }
-    #response {
-    	height: 125px;
     }
 }
 
@@ -26,14 +20,13 @@
 }
 
 #widget {
-	height: 230px;
-	padding-top: 10px;
+	height: 210px;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 }
 
 #response {
-	height: 80px;
+	height: 100px;
 	display: none;
 	border-bottom-left-radius: 12px;
 	border-bottom-right-radius: 12px;
