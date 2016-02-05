@@ -3,12 +3,18 @@
 	max-width: 480px; 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 350px) {
     #source, p, li, button, input {
     	font-size: 0.9em;
     }
     h1 {
     	font-size: 20pt;
+    }
+    #widget {
+    	height: 250px;
+    }
+    #response {
+    	height: 100px;
     }
 }
 
