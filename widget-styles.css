@@ -10,6 +10,9 @@
     h1 {
     	font-size: 20pt;
     }
+    #submit {
+    	padding-top: 0px
+    }
 }
 
 #container {
@@ -60,6 +63,7 @@ p, li, button, input {
 	font-size: 1em;
 }
 
-button {
+#submit {
 	margin-top: 15px
 }
+
