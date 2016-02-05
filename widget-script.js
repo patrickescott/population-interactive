@@ -108,7 +108,7 @@ function drawChart(place_data, place_name) {
 		if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
         	width = parseInt(screen.width, 10) - margin;
     	}
-		else {width = parseInt($('#chart-container').width(), 10) - margin;}
+		else {width = parseInt($('#chart-container').width(), 10) - margin - 10;}
 		
 		height =  90;
 
