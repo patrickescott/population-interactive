@@ -10,13 +10,6 @@
     h1 {
     	font-size: 18pt;
     }
-    #widget {
-    	height: 210px;
-    }
-    #submit {
-    	vertical-align: center;
-    }
-
 }
 
 #container {
@@ -27,7 +20,7 @@
 }
 
 #widget {
-	height: 190px;
+	height: 200px;
 	padding-top: 10px;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
@@ -38,7 +31,6 @@
 	display: none;
 	border-bottom-left-radius: 12px;
 	border-bottom-right-radius: 12px;
-	vertical-align: center;
 }
 
 #header {
@@ -48,7 +40,6 @@
 p {
 	margin-left: 30px;
 	margin-right: 20px;
-	font-family: "PT Sans", serif;
 }
 
 h1 {
@@ -56,17 +47,12 @@ h1 {
 	font-family: "PT Sans", serif;
 }
 #search {
-	margin-left: 30px;
+	text-align: center;
 	padding-top: 30px;
 }
 p, li, button, input { 
 	font-size: 0.95em;
 	font-family: "PT Sans", serif;
-}
-
-#response-text {
-	overflow: inherit;
-	margin-top: 0px;
 }
 
 #source {
