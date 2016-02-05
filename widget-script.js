@@ -108,6 +108,7 @@ function drawChart(place_data, place_name) {
 		if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
         		var ori = window.orientation;
         		width = (ori==90 || ori==-90) ? screen.height : screen.width;
+        		width = width - margin;
     		}
 		else {width = parseInt($('#chart-container').width(), 10) - margin;}
 		
