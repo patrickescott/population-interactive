@@ -33,7 +33,7 @@ $(document).ready(function(){
 				$('#response-text')
 					.html("Enter a valid local authority from the menu.");
 			}
-			$( "#response" ).show('slow');
+			$( "#response" ).hide().show('slow');
 		});
 	});
 });
