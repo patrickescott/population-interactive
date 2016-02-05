@@ -1,9 +1,9 @@
-#container, #widget, #response {
+#container, #chart-container, #widget, #response {
 	width: 100%;
 	max-width: 480px; 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 400px) {
     p, li, button, input {
     	font-size: 0.8em;
     }
@@ -22,14 +22,17 @@
     border-width: 1px;
 }
 
+#chart-container {
+	display: none;
+}
+
 #widget {
-	height: 210px;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 }
 
 #response {
-	height: 90px;
+	
 	display: none;
 	border-bottom-left-radius: 12px;
 	border-bottom-right-radius: 12px;
@@ -45,10 +48,13 @@ p {
 	text-align: center;
 }
 
-h1 {
+h1, h3 {
 	text-align: center;
 	font-family: "PT Sans", serif;
 }
+
+
+
 #search {
 	text-align: center;
 	padding-top: 30px;
@@ -66,4 +72,36 @@ p, li, button, input {
 #source {
     font-size: 0.7em;
     display: inline;	
+}
+
+button {
+	margin-bottom: 10px; 
+}
+
+.chart{
+	width: 100%;
+	height: 120px;
+}
+
+.axis text, .label {
+	font: 0.8em sans-serif;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.d3-tip {
+	line-height: 1;
+	font-size: 1em;
+	padding: 3px;
+	color: rgb(0,0,0);
+	border-radius: 2px;
+}
+
+#options {
+	margin-right: 50px;
 }
