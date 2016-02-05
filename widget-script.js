@@ -105,7 +105,7 @@ function drawChart(place_data, place_name) {
 	function get_dimensions() {
 		
 
-		width = parseInt(window.innerWidth, 10) - margin;
+		width = parseInt(screen.width, 10) - margin;
 		
 		height =  90;
 
