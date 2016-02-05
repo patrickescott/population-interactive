@@ -105,7 +105,7 @@ function drawChart(place_data, place_name) {
 	function get_dimensions() {
 		
 
-		width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+		width = parseInt($('#chart-container').width(), 10) - margin;
 		
 		height =  90;
 
