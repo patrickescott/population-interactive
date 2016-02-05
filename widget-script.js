@@ -28,7 +28,7 @@ $(document).ready(function(){
 			try {
 				$('#response-text')
 					.html("In " + place + " there are " + numberWithCommas(data[place].men) + " men and " +
-						numberWithCommas(data[place].women) + " women, giving a total population of " + numberWithCommas(data[place].men + data[place].women) + ".");
+						numberWithCommas(data[place].women) + " women, giving a population of " + numberWithCommas(data[place].men + data[place].women) + ".");
 			} catch (error) {
 				$('#response-text')
 					.html("Enter a valid local authority from the menu.");
