@@ -1,6 +1,6 @@
 #container, #widget, #response {
 	width: 100%;
-	max-width: 400px; 
+	max-width: 500px; 
 }
 
 @media only screen and (max-width: 400px) {
@@ -11,7 +11,7 @@
     	font-size: 18pt;
     }
     #widget {
-    	height: 250px;
+    	height: 210px;
     }
     #submit {
     	vertical-align: center;
@@ -38,13 +38,14 @@
 	display: none;
 	border-bottom-left-radius: 12px;
 	border-bottom-right-radius: 12px;
+	vertical-align: center;
 }
 
 #header {
 	height: 100px;
 }
 
-p, button {
+p {
 	margin-left: 30px;
 	margin-right: 20px;
 	font-family: "PT Sans", serif;
@@ -72,4 +73,3 @@ p, li, button, input {
 	text-align: right;
 	font-size: 0.95em;
 }
-
