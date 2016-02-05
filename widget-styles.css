@@ -5,13 +5,10 @@
 
 @media only screen and (max-width: 400px) {
     #source, p, li, button, input {
-    	font-size: 0.85em;
+    	font-size: 0.8em;
     }
     h1 {
-    	font-size: 20pt;
-    }
-    #submit {
-    	margin-top: 0px
+    	font-size: 22pt;
     }
 }
 
