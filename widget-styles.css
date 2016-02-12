@@ -1,10 +1,14 @@
-#container, #widget, #response {
-	width: 100%;
-	max-width: 400px; 
+#container, #chart-container, #widget, #response {
+	width: 98%;
+	max-width: 600px;
 }
 
-@media only screen and (max-width: 300px) {
-    body {
+@media only screen and (max-width: 500px) {
+    p, li, button, input {
+    	font-size: 0.8em;
+    }
+    h1 {
+    	font-size: 18pt;
     }
 }
 
@@ -15,48 +19,82 @@
     border-width: 1px;
 }
 
-#widget {
-	height: 190px;
-	padding-top: 10px;
-	border-top-left-radius: 12px;
-	border-top-right-radius: 12px;
+#chart-container, #response {
+	display: none;
 }
 
-#response {
-	height: 100px;
-	display: none;
-	border-bottom-left-radius: 12px;
-	border-bottom-right-radius: 12px;
+#widget, #response {
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
 }
 
 #header {
 	height: 100px;
 }
 
-h1, p, button {
-	margin-left: 30px;
+p {
+	margin-left: 20px;
 	margin-right: 20px;
-	font-family: "PT Sans", serif;
-}
-
-h1 {
 	text-align: center;
 }
-#search {
-	margin-left: 30px;
-	padding-top: 30px;
-}
-p, li, button, input { 
-	font-size: 0.95em;
+
+h1, h3 {
+	text-align: center;
 	font-family: "PT Sans", serif;
 }
 
-#response-text {
-	overflow: inherit;
-	margin-top: 0px;
+h3 {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#search {
+	text-align: center;
+	padding-top: 30px;
+}
+text, p, li, button, input { 
+	font-size: 1em;
+	font-family: "PT Sans", serif;
+}
+
+
+#submit {
+	margin-top: 5px;
 }
 
 #source {
-	text-align: right;
-	font-size: 0.95em;
+    font-size: 0.7em;
+    display: inline;	
+}
+
+button {
+	margin-bottom: 10px; 
+}
+
+.chart{
+	width: 100%;
+	height: 120px;
+}
+
+.axis text, .label {
+	font: 0.8em sans-serif;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.d3-tip {
+	line-height: 1;
+	font-size: 1em;
+	padding: 3px;
+	color: rgb(0,0,0);
+	border-radius: 2px;
+}
+
+#options {
+	margin-right: 50px;
 }
