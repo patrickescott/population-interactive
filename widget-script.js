@@ -150,7 +150,7 @@ function drawChart(place_data, place_name) {
 		xAxis = d3.svg.axis()
 			      .scale(x)
 			      .orient("bottom")
-			      .ticks(5);
+			      .ticks(4);
 
 
 		scale_svg.attr("width", width + margin)
